@@ -27,19 +27,13 @@ After installation, you can import the SCSS file into your project using this sn
 @import 'flex-grid-system-generator-mixin/src/mixins/flex-grid-system-maker-mixins.scss'
 ```
 
-### CDN
-
-[https://www.jsdelivr.com/package/npm/bulma](https://www.jsdelivr.com/package/npm/bulma)
-
 Feel free to raise an issue or submit a pull request.
 
 ## CSS only
 
-This is a **SCSS** mixin framework. As such, the sole output is a single CSS file: [bulma.css](https://github.com/jgthms/bulma/blob/master/css/bulma.css)
+This is a **SCSS** mixin for make grid system as you prefer.
 
-You can either use that file, "out of the box", or download the Sass source files to customize the [variables](https://bulma.io/documentation/overview/variables/).
-
-There is **no** JavaScript included. People generally want to use their own JS implementation (and usually already have one). Bulma can be considered "environment agnostic": it's just the style layer on top of the logic.
+There is **no** JavaScript included. People generally want to use their own JS implementation (and usually already have one). This can be considered "environment agnostic": it's just the style layer on top of the logic.
 
 ## Browser Support
 
