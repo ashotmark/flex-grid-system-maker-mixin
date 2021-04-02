@@ -5,7 +5,7 @@ $breakpointMd: 768px;
 $breakpointLg: 992px;
 $breakpointXl: 1140px;
 
- @include makeFlexRow(b-row);
+@include makeFlexRow(b-row);
 @include makeFlexCols(col-, 12);
 
 @include makeFlexGap(b-row, 10px, 10px);

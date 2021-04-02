@@ -1,5 +1,5 @@
 {
-  "name": "flex-grid-system-generator-mixin",
+  "name": "flex-grid-system-maker-mixin",
   "version": "1.0.1",
   "description": "Generate flex grid system as you preferred in breakpoint, className, gap with minimum size, that will generate grid system only ones you demand",
   "main": "index.js",
