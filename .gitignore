@@ -1,6 +1,7 @@
 # node modules
 bower_components
 node_modules
+**/.sass-cache
 
 # Editor directories and files
 .idea
