@@ -1,7 +1,7 @@
 {
   "name": "flex-grid-system-generator-mixin",
   "version": "1.0.0",
-  "description": "Generate flex grid system as you prefered in breakpoint, className, gap with minimum size, that will generate grid system only ones you need",
+  "description": "Generate flex grid system as you preferred in breakpoint, className, gap with minimum size, that will generate grid system only ones you demand",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
