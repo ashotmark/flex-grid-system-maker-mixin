@@ -1,0 +1,97 @@
+@mixin makeFlexRow($className) {
+  .#{$className} {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(#{var(--gapY, 0)} * -1) calc(#{var(--gapX, 0)} * -1);
+    > * {
+      box-sizing: border-box;
+      padding: var(--gapY, 0) var(--gapX, 0);
+      width: 100%;
+    }
+  }
+}
+
+@mixin makeFlexGap($className: '', $gapX: 0, $gapY: 0) {
+  .#{$className} {
+    --gapY: #{$gapY / 2};
+    --gapX: #{$gapX / 2};
+  }
+}
+
+@mixin makeFlexCols($classNamePrefix: '', $columns: 12, $classNameSuffix: '') {
+  .#{$classNamePrefix}auto#{$classNameSuffix} {
+    width: auto;
+  }
+  @for $i from 0 through $columns {
+    .#{$classNamePrefix}#{$i}#{$classNameSuffix} {
+      width: 100% * $i / $columns;
+    }
+  }
+}
+
+@mixin makeFlexHelpers($classNamePrefix: '') {
+  .#{$classNamePrefix}grow {
+    flex-grow: 1;
+  }
+  .#{$classNamePrefix}grow-0 {
+    flex-grow: 0;
+  }
+  .#{$classNamePrefix}grow-much {
+    flex-grow: 999;
+  }
+  .#{$classNamePrefix}shrink {
+    flex-shrink: 1;
+  }
+  .#{$classNamePrefix}shrink-0 {
+    flex-shrink: 0;
+  }
+  .#{$classNamePrefix}shrink-much {
+    flex-shrink: 999;
+  }
+  .#{$classNamePrefix}order-0 {
+    order: 0;
+  }
+  .#{$classNamePrefix}order-1 {
+    order: 1;
+  }
+  .#{$classNamePrefix}order-much {
+    order: 99;
+  }
+}
+
+@mixin makeJustifyAlignHelpers($classNamePrefix: '') {
+  .#{$classNamePrefix}justify-space-around {
+    justify-content: space-around;
+  }
+  .#{$classNamePrefix}justify-space-between {
+    justify-content: space-between;
+  }
+  .#{$classNamePrefix}justify-center {
+    justify-content: center;
+  }
+  .#{$classNamePrefix}justify-start {
+    justify-content: flex-start;
+  }
+  .#{$classNamePrefix}justify-end {
+    justify-content: flex-end;
+  }
+  .#{$classNamePrefix}align-stretch {
+    align-items: stretch;
+  }
+  .#{$classNamePrefix}align-start {
+    align-items: flex-start;
+  }
+  .#{$classNamePrefix}align-center {
+    align-items: center;
+  }
+  .#{$classNamePrefix}align-end {
+    align-items: flex-end;
+  }
+}
+
+
+@mixin media-breakpoint-up($minBreakpoint) {
+  @media all and (min-width: $minBreakpoint) {
+    @content;
+  }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS flex layout</title>
+  <meta name="viewport" content="width: screen-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="assets/scss/layout.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/scss/app.css"/>
+</head>
+<body>
+<div class="container">
+  <section>
+    <h3>12 columns system</h3>
+    <div class="b-row">
+      <div class="sm:col-6 md:col-4 lg:col-3 xl:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-4 lg:col-3 xl:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-4 lg:col-3 xl:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-4 lg:col-3 xl:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-4 lg:col-3 xl:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-4 lg:col-3 xl:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>5 columns system on desktop and 3 columns on large mobile</h3>
+    <div class="b-row">
+      <div class="sm:col-1/3 md:col-1/5">
+        <div class="item">
+          sm:col-1/3
+          md:col-1/5
+        </div>
+      </div>
+      <div class="sm:col-1/3 md:col-1/5">
+        <div class="item">
+          sm:col-1/3
+          md:col-1/5
+        </div>
+      </div>
+      <div class="sm:col-1/3 md:col-1/5">
+        <div class="item">
+          sm:col-1/3
+          md:col-1/5
+        </div>
+      </div>
+      <div class="sm:col-1/3 md:col-1/5">
+        <div class="item">
+          sm:col-1/3
+          md:col-1/5
+        </div>
+      </div>
+      <div class="sm:col-1/3 md:col-1/5">
+        <div class="item">
+          sm:col-1/3
+          md:col-1/5
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>automatically breakdown</h3>
+    <div class="b-row">
+      <div class="col-auto flex-grow">
+        <div class="item">
+          auto width with grow
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="item">
+          auto width without grow
+        </div>
+      </div>
+      <div class="col-auto flex-grow md:flex-grow-0">
+        <div class="item">
+          auto width and grow on mobile
+        </div>
+      </div>
+      <div class="col-auto flex-grow">
+        <div class="item">
+          auto width with grow
+        </div>
+      </div>
+      <div class="col-auto flex-grow">
+        <div class="item">
+          will be breakdown automatically
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>setting one column width, others are same width</h3>
+    <div class="b-row">
+      <div class="sm:col-0 flex-grow">
+        <div class="item">
+          other one
+        </div>
+      </div>
+      <div class="sm:col-5">
+        <div class="item">
+          5 / 12 width
+        </div>
+      </div>
+      <div class="sm:col-0 flex-grow">
+        <div class="item">
+          other one
+        </div>
+      </div>
+      <div class="sm:col-0 flex-grow">
+        <div class="item">
+          other one
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>grow only specific column when space is okay and automatically breakdown with grow when space is less</h3>
+    <div class="b-row">
+      <div class="col-auto flex-grow">
+        <div class="item">
+          auto width and then grow only after breakdown
+        </div>
+      </div>
+      <div class="col-auto flex-grow-much">
+        <div class="item">
+          auto width with grow
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Small gap</h3>
+    <div class="b-row small-gap">
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>No gap</h3>
+    <div class="b-row no-gap">
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+      <div class="sm:col-6 md:col-3 lg:col-2">
+        <div class="item">
+          lg:col-2
+          md:col-3
+          sm:col-6
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>auto width and grow if exists rest space, auto width no grow</h3>
+    <div class="b-row">
+      <div class="md:col-auto flex-grow">
+        <div class="item">
+          md:col-auto flex-grow
+        </div>
+      </div>
+      <div class="md:col-auto">
+        <div class="item">
+          md:col-auto
+        </div>
+      </div>
+      <div class="md:col-auto">
+        <div class="item">
+          md:col-auto
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Change col order on mobile</h3>
+    <div class="b-row">
+      <div class="md:col-6 md:flex-order-1">
+        <div class="item" style="background-color: #9eff6d">
+          on mobile I am first
+        </div>
+      </div>
+      <div class="md:col-6 md:flex-order-0">
+        <div class="item">
+          on desktop I am first
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>same width</h3>
+    <div class="b-row">
+      <div class="sm:col-0 flex-grow">
+        <div class="item">
+          item
+        </div>
+      </div>
+      <div class="sm:col-0 flex-grow">
+        <div class="item">
+          item
+        </div>
+      </div>
+      <div class="sm:col-0 flex-grow">
+        <div class="item">
+          item
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

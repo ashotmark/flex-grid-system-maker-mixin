@@ -1,0 +1,38 @@
+@import "layout-mixins";
+
+$breakpointSm: 576px;
+$breakpointMd: 768px;
+$breakpointLg: 992px;
+$breakpointXl: 1140px;
+
+ @include makeFlexRow(b-row);
+@include makeFlexCols(col-, 12);
+
+@include makeFlexGap(b-row, 10px, 10px);
+
+@include makeFlexHelpers(flex-);
+@include makeJustifyAlignHelpers();
+
+@include media-breakpoint-up($breakpointSm) {
+  @include makeFlexCols(sm\:col-, 3, \/3);
+  @include makeFlexCols(sm\:col-, 12);
+}
+
+@include media-breakpoint-up($breakpointMd) {
+  @include makeFlexCols(md\:col-, 12);
+  @include makeFlexCols(md\:col-, 5, \/5);
+  @include makeFlexGap(b-row, 30px, 30px);
+  @include makeFlexHelpers(md\:flex-);
+  @include makeJustifyAlignHelpers(md\:);
+}
+
+@include media-breakpoint-up($breakpointLg) {
+  @include makeFlexCols(lg\:col-, 12);
+}
+
+@include media-breakpoint-up($breakpointXl) {
+  @include makeFlexCols(xl\:col-, 12);
+}
+
+@include makeFlexGap(small-gap, 10px, 10px);
+@include makeFlexGap(no-gap, 0, 0);

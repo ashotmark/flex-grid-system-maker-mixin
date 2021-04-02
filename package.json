@@ -1,0 +1,28 @@
+{
+  "name": "flex-grid-system-generator-mixin",
+  "version": "1.0.0",
+  "description": "Generate flex grid system as you prefered in breakpoint, className, gap with minimum size, that will generate grid system only ones you need",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashotmark/flex-grid-system-maker-mixin.git"
+  },
+  "keywords": [
+    "flexbox",
+    "scss",
+    "grid",
+    "maker",
+    "generator",
+    "mixin",
+    "flexible"
+  ],
+  "author": "Prime one",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashotmark/flex-grid-system-maker-mixin/issues"
+  },
+  "homepage": "https://github.com/ashotmark/flex-grid-system-maker-mixin#readme"
+}
