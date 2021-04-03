@@ -7,6 +7,8 @@ This is a **modern SCSS mixin** based on [Flexbox](https://developer.mozilla.org
 This is constantly in development! Try it out now:
 You can generate grid system based on flexbox as you prefer.
 - free in naming className
+- free in columns per breakpoint
+- free in multi columns system per breakpoint
 - free in adding breakpoints
 - free in gap between columns
 - honestly if you are senior you are able to utilize all mixins as you prefer for your project
