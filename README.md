@@ -81,9 +81,9 @@ $breakpointXl: 1140px;
 
 ```sh
 
-// makeFlexCols(<className>);
+// makeFlexRow(b-row);
 
-@include makeFlexCols(b-row);
+@include makeFlexRow(b-row);
 
 // now we can use <div class="b-row">...</div>
 ```
